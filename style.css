@@ -1,5 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+
 body {
-  color: blue;
+  background-color: black;
+}
+
+ul {
+  float: right;
+  height: 60px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  padding-right: 10%;
+  padding-top: 30px;
+}
+
+li {
+  display: inline;
+  padding: 20px;
+  background-color: black;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  padding: 20px;
+  color: whitesmoke;
 }
 
 /*# sourceMappingURL=style.css.map */
