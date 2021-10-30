@@ -1,4 +1,8 @@
 @import "abstract/variables";
+@import "abstract/mixins";
+@import "layout/nav";
+// @import "components/n";
+
 *{
     margin: 0;
     padding: 0;
@@ -11,39 +15,7 @@ body{
     // overflow: hidden;
 
 }
-nav{
-    width: 100%;
-    height: 80px;
-    background-color: black;
-    position: fixed;
-    z-index: 10;
-}
 
-ul {
-    float: right;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-right: 10%;
-    padding-top: 30px;
-  }
-
-li {
-    display: inline;
-    padding: 20px;
-    background-color: black;
-    font-size: 20px;
-
-    a{
-        padding: 20px;
-        font-weight: bold;
-      }
-
-    a:hover{
-        color: $primary;
-      }
-
-  }
 
 a{
     text-decoration: none;
@@ -57,9 +29,6 @@ section{
     font-size: 64px;
 }
 
-.coco{
-    font-size: 72px;
-}
 
 .arrow{
     font-size: 55px;
@@ -82,6 +51,15 @@ i:hover{
     font-size: 35px;
     margin-left: 95%;
     position: fixed;
+    display: flex;
+}
+
+.arrow_up2{
+    margin-top: 50px;
+    font-size: 35px;
+    margin-left: 95%;
+    position: fixed;
+    display: flex;
 }
 
 #first_section, #section_contact, #second_section{
@@ -99,6 +77,7 @@ i:hover{
         .item {
             height: 100%;
             display: flex;
+            font-size: 72px;
         }
 
         .item_top{
@@ -245,6 +224,7 @@ i:hover{
         border: 2px solid $primary;
         color: $primary;
         font-size: 16px;
+        font-weight: bold;
     }
 
     button:active{
@@ -254,12 +234,46 @@ i:hover{
     }
 }
 
+span{
+    color: $primary;
+    position: absolute; 
+    font-size: 40px;
+    margin-bottom: 15%;
+}
+
 footer{
-    width: 100%;
-    height: 100px;
-    background-color: rgb(71, 71, 71);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: whitesmoke;
+    @include footer;
+}
+
+.section_presentation{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr 400px;
+    grid-template-rows: 300px 500px;
+    column-gap: 60px;
+
+
+
+        .item {
+            height: 100%;
+            display: flex;
+            font-size: 26px;
+            align-items: center;
+            line-height: 35px;
+        }
+
+        .item_top{
+            grid-column: 1 / 3;
+        }
+
+        .item_left{
+            width: 15px;
+        }
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            margin-left: 50%;
+            transform: translate(-50%, 0%);
+        }
 }
