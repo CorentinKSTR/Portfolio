@@ -277,3 +277,30 @@ footer{
             transform: translate(-50%, 0%);
         }
 }
+.skills{
+    height: 100vh;
+    width: 100%;
+}
+
+.section_skills{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: 200px 1fr;
+    font-size: 30px;
+    justify-content: center;
+
+    .item_top{
+        grid-column: 1/5;
+        color: $primary;
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+    }
+
+    .item{
+        text-align: center;
+    }
+}
+
+
