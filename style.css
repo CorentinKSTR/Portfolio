@@ -151,7 +151,6 @@ i:hover {
   filter: grayscale(100%);
 }
 .section_2 img:hover {
-  /* L'image est grossie de 25% */
   -webkit-transform: scale(1.01);
   /* Safari et Chrome */
   -moz-transform: scale(1.01);
@@ -236,6 +235,7 @@ i:hover {
   background-color: #37e954;
   border: black;
   color: black;
+  font-weight: bold;
 }
 
 span {
@@ -333,11 +333,13 @@ footer {
   grid-row: 2/9;
   grid-column: 1/2;
   text-align: justify;
+  line-height: 35px;
 }
 .section_competences .item_ex2 {
   grid-row: 12/18;
   grid-column: 2/3;
   text-align: justify;
+  line-height: 35px;
 }
 .section_competences .item {
   text-align: center;

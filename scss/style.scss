@@ -140,7 +140,6 @@ i:hover{
         }
 
         img:hover {
-            /* L'image est grossie de 25% */
             -webkit-transform:scale(1.01); /* Safari et Chrome */
             -moz-transform:scale(1.01); /* Firefox */
             -ms-transform:scale(1.01); /* Internet Explorer 9 */
@@ -231,6 +230,8 @@ i:hover{
         background-color: $primary;
         border: black;
         color : black;
+        font-weight: bold;
+
     }
 }
 
@@ -331,11 +332,13 @@ footer{
         grid-row: 2/9;
         grid-column: 1/2;
         text-align: justify;
+        line-height: 35px;
     }
     .item_ex2{
         grid-row: 12/18;
         grid-column: 2/3;
         text-align: justify;
+        line-height: 35px;
     }
     .item{
         text-align: center;
