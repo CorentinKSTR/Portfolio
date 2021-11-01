@@ -16,7 +16,6 @@ body{
 
 }
 
-
 a{
     text-decoration: none;
     color: whitesmoke;
@@ -29,13 +28,13 @@ section{
     font-size: 64px;
 }
 
-
 .arrow{
     font-size: 55px;
     margin-top: 250px;
     margin-left: 50%;
     transform: translate(-50%, -50%);
 }
+
 i:hover{
     color: $primary;
   }
@@ -74,10 +73,10 @@ i:hover{
     grid-template-rows: 300px repeat(3, 1fr);
 
 
-        .item {
-            height: 100%;
-            display: flex;
-            font-size: 72px;
+    .item {
+        height: 100%;
+        display: flex;
+        font-size: 72px;
         }
 
         .item_top{
@@ -135,8 +134,6 @@ i:hover{
     column-gap: 20px;
     row-gap: 10px;
     font-size: 24px;
-
-
 
     .item {
         height: 100%;
@@ -236,8 +233,6 @@ footer{
     grid-template-rows: 300px 500px;
     column-gap: 60px;
 
-
-
         .item {
             height: 100%;
             display: flex;
@@ -311,14 +306,17 @@ footer{
         text-align: justify;
         line-height: 35px;
     }
+
     .item_ex2{
         grid-row: 12/18;
         grid-column: 2/3;
         text-align: justify;
         line-height: 35px;
     }
+
     .item{
         text-align: center;
+
     }
     .item_separation{
         grid-column: 1/3;
@@ -362,11 +360,9 @@ video{
     }
 }
 
-.responsiv{
+.responsive{
     height: 100vh;
 }
-
-///////////////////////////////////////
 
 @include s{
     #second_section{
@@ -377,7 +373,6 @@ video{
         grid-template-columns: 50px 1fr;
         grid-template-rows: 300px repeat(3, 1fr);
         line-height: 50px;
-
 
         .item{
             font-size: 40px;
@@ -431,7 +426,6 @@ video{
         color: $primary;
     }
 
-
     #section_contact{
         height: auto;
         padding-bottom: 50px;
@@ -445,7 +439,6 @@ video{
         font-size: 24px;
         text-align: center;
         align-items: center;
-
 
         .item_up_1{
             grid-row: 2/3 ;
@@ -478,7 +471,7 @@ video{
         
     }
 
-    .responsiv{
+    .responsive{
         height: auto;
     }
 
@@ -498,7 +491,7 @@ video{
             width: 100%;
         }
 
-        .span_responsiv{
+        .span_responsive{
             margin-bottom: 500px;
         }
     }
@@ -563,16 +556,13 @@ video{
         }
     }
 
-   
     .section_project{
         margin: 0 auto;
         display: grid;
         grid-template-columns: 40px 1fr;
         grid-template-rows: 200px 1fr;
         column-gap: 0px;
-    
-    
-    
+
             .item {
                 height: 100%;
                 display: flex;
@@ -595,24 +585,21 @@ video{
                 margin-left: 5%;
                 transform: translate(0%, 0%);
                 padding-top: 10%;
-
             }
 
             .item_img {
                 grid-column: 1 / 3;
             }
 
-            .span_responsiv{
+            .span_responsive{
                 padding-bottom: 80%;
             }
-
 
             .span_p2{
                 margin-bottom: 45%;
                 font-size: 36px;
             }
-            
-    }
+}
 
     video{
         margin: 2%;
@@ -620,7 +607,3 @@ video{
         margin-top: 20%;
     }
 }
-   
-
-
-    
