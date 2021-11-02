@@ -22,6 +22,18 @@ a{
     padding: 0;
 }
 
+.section_1 .hello{
+    animation-name: title;
+    animation-duration: 1.5s;
+}
+
+@keyframes  title{
+    0%   { color: white;}
+    50%   { color: white;}
+    100% { color: $primary;}
+  }
+
+
 section{
     color: whitesmoke;
     font-weight: bold;
@@ -258,6 +270,14 @@ footer{
             object-fit: cover;
             margin-left: 50%;
             transform: translate(-50%, 0%);
+        }
+
+        
+}
+
+.section_project{
+    img:hover {
+        height: 105%;
         }
 }
 .skills{
@@ -650,6 +670,10 @@ video{
             .span_p2{
                 margin-bottom: 45%;
                 font-size: 36px;
+            }
+            
+            a{
+                grid-column: 1 / 3;
             }
         }
 
