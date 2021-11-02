@@ -232,6 +232,10 @@ span {
   margin-bottom: 22%;
 }
 
+.hello {
+  font-size: 72px;
+}
+
 footer {
   width: 100%;
   height: 100px;
@@ -273,6 +277,7 @@ footer {
   padding-top: 100px;
   height: auto;
   width: 100%;
+  padding-bottom: 150px;
 }
 
 .section_skills {
@@ -322,18 +327,32 @@ footer {
   text-align: justify;
   line-height: 35px;
 }
-.section_competences .item {
-  text-align: center;
-}
 .section_competences .item_separation {
   grid-column: 1/3;
   grid-row: 9/12;
 }
 .section_competences .left_item {
   margin-left: 10%;
+  text-align: left;
 }
 .section_competences .right_item {
+  text-align: right;
   margin-right: 10%;
+}
+.section_competences .left_item img {
+  object-fit: cover;
+  height: 40px;
+  float: left;
+  margin-left: 20%;
+  transform: translate(-50%, 0%);
+}
+.section_competences .right_item img {
+  object-fit: cover;
+  height: 40px;
+  float: right;
+  margin-right: 20%;
+  transform: translate(50%, 0%);
+  width: 40px;
 }
 
 video {
@@ -373,6 +392,10 @@ video {
 }
 
 @media screen and (max-width: 500px) {
+  .hello {
+    font-size: 40px;
+  }
+
   #second_section {
     height: auto;
   }
@@ -544,6 +567,12 @@ video {
   .section_competences .item_separation {
     grid-column: 1/2;
     grid-row: 10/11;
+  }
+  .section_competences .right_item img {
+    margin-left: 20%;
+  }
+  .section_competences .left_item img {
+    margin-right: 20%;
   }
 
   .section_project {

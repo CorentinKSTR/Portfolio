@@ -4,7 +4,7 @@
 //     }
 // }
 
-@mixin s {
+@mixin s { //C'est juste pour l'iPhnoeX :(
     @media screen and (max-width: 500px) {
         @content;
     }
