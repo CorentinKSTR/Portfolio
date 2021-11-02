@@ -391,7 +391,7 @@ video {
   height: 100vh;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .hello {
     font-size: 40px;
   }
@@ -505,7 +505,7 @@ video {
     grid-column: 2/4;
   }
   .section_presentation img {
-    width: 100%;
+    width: 70%;
   }
   .section_presentation .span_responsive {
     margin-bottom: 500px;
@@ -525,6 +525,7 @@ video {
     font-size: 30px;
     justify-content: center;
     margin-bottom: 100px;
+    padding-top: 100px;
   }
   .section_skills .item_top {
     grid-column: 1/2;
